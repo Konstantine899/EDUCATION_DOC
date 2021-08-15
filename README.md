@@ -1,0 +1,1 @@
+отрефактори react-theory-doc
