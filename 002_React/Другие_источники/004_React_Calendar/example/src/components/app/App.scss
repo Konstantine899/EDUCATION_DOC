@@ -1,0 +1,42 @@
+// App.scss
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #faebd7;
+}
+
+#root {
+  // height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.ShadowWrapper {
+  border-radius: 8px;
+  border-top: 1px solid #737374;
+  border-left: 1px solid #464648;
+  border-right: 1px solid #464648;
+  border-bottom: 2px solid #464648;
+  box-shadow: 0 0 0 1px #1a1a1a, 0 8px 20px 6px #888;
+  overflow: hidden; // Переполняющее содержимое не отображается
+}
+.FormCalendarWrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  // grid-template-columns: repeat(2, 1fr);
+}
+.container {
+  outline: 1px solid red;
+  background-color: #faebd7;
+}

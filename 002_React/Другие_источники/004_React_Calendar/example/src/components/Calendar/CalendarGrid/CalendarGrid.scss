@@ -1,0 +1,60 @@
+//components/CalendarGrid/CalendarGrid.scss
+.GridWrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); // разбиваю на колонки
+  // grid-template-rows: repeat(6, 1fr);
+  grid-gap: 1px; // зазор между ячейками
+  background-color: #404040; // цвет подложки
+}
+.CellWrapper {
+  // min-height: 80px;
+  min-width: 140px;
+  background-color: #1e1f21;
+  color: #dddcdd;
+  cursor: pointer;
+}
+
+.RowInCell {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  .DayColor {
+    color: #dcdddd;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}
+
+.DayWrapper:hover {
+  background-color: green;
+  border-radius: 50%;
+}
+
+.DayWrapper {
+  height: 33px;
+  width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  // outline: 1px solid green;
+}
+
+.CurrentDay {
+  height: 100%;
+  width: 100%;
+  background-color: #f00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CurrentDay1 {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

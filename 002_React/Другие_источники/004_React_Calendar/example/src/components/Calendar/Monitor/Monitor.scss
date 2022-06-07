@@ -1,0 +1,37 @@
+// Monitor.scss
+.DivWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1f21;
+  color: #dcdddd;
+}
+
+.DivWrapper {
+  padding: 16px;
+  span {
+    font-size: 32px;
+  }
+}
+
+.DivWrapperMonth {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.ButtonWrapper {
+  border: unset;
+  background-color: #565759;
+  height: 28px;
+  margin-right: 2px;
+  border-radius: 4px;
+  color: #e6e6e6;
+  outline: unset;
+  cursor: pointer;
+}
+
+.TodayButton {
+  padding-right: 16px;
+  padding-left: 16px;
+  font-weight: bold;
+}
