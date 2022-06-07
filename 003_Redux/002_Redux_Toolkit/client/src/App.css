@@ -1,0 +1,30 @@
+.App{
+    display: flex;
+}
+.post__list {
+    width: 100%;
+    padding: 20px;
+    margin: 0 40px;
+}
+
+.user {
+    padding: 20px;
+    border: 1px solid orange;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.post {
+    padding: 20px;
+    border: 1px solid teal;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
