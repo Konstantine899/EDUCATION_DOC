@@ -1,0 +1,19 @@
+{
+  "entities": [
+    {
+      "title": "Первая задача",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "title": "Вторая задача",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "title": "Третья задача",
+      "completed": true,
+      "id": 3
+    }
+  ]
+}

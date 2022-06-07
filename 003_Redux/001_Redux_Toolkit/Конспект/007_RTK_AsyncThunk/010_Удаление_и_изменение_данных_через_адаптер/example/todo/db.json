@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "title": "Новая задача на адаптере",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "title": "Вторая задача",
+      "completed": false,
+      "id": 2
+    }
+  ]
+}

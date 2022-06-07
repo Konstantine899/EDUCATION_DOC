@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "title": "Изучить Redux Toolkit",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "title": "Стать успешным разработчиком",
+      "completed": false,
+      "id": 2
+    }
+  ]
+}
