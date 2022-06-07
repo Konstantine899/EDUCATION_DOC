@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список sim-cards</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Список sim-cards</h1>
+    <p><a href="/create">Добавить sim-card</a></p>
+    <table>
+        <tr><th>Оператор</th><th>Абонентский номер</th><th></th></tr>
+        {{#each simCards}}
+            <tr>
+                <td>{{this.operator}}</td>
+                <td>{{this.number}}</td>
+                <td>
+                    <a href="/edit/{{this.id}}">Редактировать</a>|
+                    <form action="delete/{{this.id}}" method="POST" style="display:inline;">
+                        <input type="submit" value="Удалить" />
+                    </form>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+<html>
