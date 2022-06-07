@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "corejs": 3,
+        "useBuiltIns": "usage",
+        "debug": true,
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties"
+  ]
+}

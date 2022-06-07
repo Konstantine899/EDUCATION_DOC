@@ -1,0 +1,67 @@
+//Импортирую плагины
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+module.exports = {
+  mode: "development",
+
+  // Лоудеры
+  module: {
+    rules: [
+      // Обработка JS
+      {
+        test: /\.(js)$/,
+        //до обработки js файлов указываю исключение в поле exclude то что не нежно обрабатывать
+        exclude: /node_modules/,
+        loader: "babel-loader",
+      },
+      // Загрузка картинок
+      {
+        test: /\.(png|jpg|jpeg|gif|ico)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "images",
+              name: "[name]-[sha1:hash:7].[ext]",
+            },
+          },
+        ],
+      },
+      // Загрузка шрифтов
+      {
+        test: /\.(ttf|otf|eot|woof|woof2)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "fonts",
+              name: "[name].[ext]",
+            },
+          },
+        ],
+      },
+      // Загрузка css
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      // Загрузка sass/scss
+      {
+        test: /\.(s[ac]ss)$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+    ],
+  },
+  //Плагины
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Hello World",
+      buildTime: new Date().toString(),
+      template: "public/index.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "main-[hash:8].css",
+    }),
+  ],
+};

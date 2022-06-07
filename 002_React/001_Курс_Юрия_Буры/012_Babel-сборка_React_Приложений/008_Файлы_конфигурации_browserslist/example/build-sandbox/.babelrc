@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "debug": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties"
+  ]
+}

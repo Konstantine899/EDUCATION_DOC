@@ -1,0 +1,18 @@
+{
+  "name": "build-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox to play with React build tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konstantin Atroshchenko <kostay375298918971@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-block-scoping": "^7.16.7",
+    "@babel/plugin-transform-classes": "^7.16.7",
+    "@babel/plugin-transform-template-literals": "^7.16.7"
+  }
+}
