@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  background-color: #ddd;
+}
+
+h1 {
+  margin: 16px 12px 30px;
+}
+
+form div {
+  margin: 12px;
+}
+
+form button {
+  margin-top: 10px;
+}
